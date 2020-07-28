@@ -1,0 +1,83 @@
+PODS:
+  - FunNet/Combine (0.0.1):
+    - FunNet/Core
+    - LithoOperators
+  - FunNet/Core (0.0.1):
+    - LithoOperators
+  - LithoOperators (0.0.11):
+    - Prelude
+  - LUI (0.1.0):
+    - LithoOperators
+    - LUX/Networking
+    - PlaygroundVCHelpers
+    - Prelude
+    - Slippers
+  - LUX/Auth (0.2.0)
+  - LUX/BaseNetworking (0.2.0):
+    - FunNet/Core
+    - LUX/Auth
+    - Slippers
+  - LUX/Networking (0.2.0):
+    - FunNet/Combine
+    - LUX/BaseNetworking
+  - PlaygroundVCHelpers (0.0.2)
+  - Prelude (3.0.0)
+  - Slippers (0.0.1)
+
+DEPENDENCIES:
+  - FunNet/Combine (from `https://github.com/schrockblock/funnet`)
+  - LithoOperators (from `https://github.com/ThryvInc/LithoOperators`)
+  - LUI (from `../`)
+  - LUX/Networking (from `https://github.com/ThryvInc/LUX`, branch `es/slippers`)
+  - PlaygroundVCHelpers (from `https://github.com/ThryvInc/playground-vc-helpers`)
+  - Prelude
+  - Slippers (from `https://github.com/ThryvInc/slippers`)
+
+SPEC REPOS:
+  trunk:
+    - Prelude
+
+EXTERNAL SOURCES:
+  FunNet:
+    :git: https://github.com/schrockblock/funnet
+  LithoOperators:
+    :git: https://github.com/ThryvInc/LithoOperators
+  LUI:
+    :path: "../"
+  LUX:
+    :branch: es/slippers
+    :git: https://github.com/ThryvInc/LUX
+  PlaygroundVCHelpers:
+    :git: https://github.com/ThryvInc/playground-vc-helpers
+  Slippers:
+    :git: https://github.com/ThryvInc/slippers
+
+CHECKOUT OPTIONS:
+  FunNet:
+    :commit: e56bc9bdb94db1df53f6a84c4041b2dc72bbd6cb
+    :git: https://github.com/schrockblock/funnet
+  LithoOperators:
+    :commit: 02373c43292c098a6d57bbaf47260a2a6ae2649f
+    :git: https://github.com/ThryvInc/LithoOperators
+  LUX:
+    :commit: 30f77a5958e935b44352e7d8d2f9693f2f1f1b90
+    :git: https://github.com/ThryvInc/LUX
+  PlaygroundVCHelpers:
+    :commit: 1b1f5ed572a1965e1d52bbc1b21f3796a6f144e2
+    :git: https://github.com/ThryvInc/playground-vc-helpers
+  Slippers:
+    :commit: d93c04c0b1f10ae6164774fb65a403d3594e6647
+    :git: https://github.com/ThryvInc/slippers
+
+SPEC CHECKSUMS:
+  FunNet: d3a58cf3092d9ec4c9ca9338c4f20fcc7e0eebad
+  LithoOperators: 32d71d8b556291ee1e6abe7dd44a4f1a4c3653c4
+  LUI: 857ac9a91a3f43862018d5fbb0091300b1e793d2
+  LUX: bd7e7c79cfc033a980f4e18ccd65a51c41f77f44
+  PlaygroundVCHelpers: c7cc8994d2851ebd1590217101b4c6888d1c9cc8
+  Prelude: fe4cc0fd961d34edf48fe6b04d05c863449efb0a
+  Slippers: ecb06bb170b29462e767a70a20eb06e172135d53
+
+PODFILE CHECKSUM: dfbdf0c51c1b50eda63c6c94b6af3a8ab206c827
+
+COCOAPODS: 1.9.0

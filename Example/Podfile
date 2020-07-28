@@ -2,11 +2,15 @@ use_frameworks!
 
 target 'LUI_Example' do
   pod 'LUI', :path => '../'
+  pod 'LUX/Networking', git: 'https://github.com/ThryvInc/LUX', branch: 'es/slippers'
+  pod 'PlaygroundVCHelpers', git: 'https://github.com/ThryvInc/playground-vc-helpers'
+  pod 'FunNet/Combine', git: 'https://github.com/schrockblock/funnet'
+  pod 'Slippers', git: 'https://github.com/ThryvInc/slippers'
+  pod 'LithoOperators', git: 'https://github.com/ThryvInc/LithoOperators'
+  pod 'Prelude'
 
   target 'LUI_Tests' do
     inherit! :search_paths
 
-    pod 'Quick', '~> 1.2.0'
-    pod 'Nimble', '~> 7.0'
   end
 end

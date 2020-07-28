@@ -8,8 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LUI'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'A short description of LUI.'
+  s.swift_versions   = ['5.0', '5.1', '5.2']
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -24,19 +25,19 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/Elliot/LUI'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Elliot' => 'elliot.schrock@gmail.com' }
-  s.source           = { :git => 'https://github.com/Elliot/LUI.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Elliot' => '' }
+  s.source           = { :git => 'https://github.com/ThryvInc/LUI.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/elliot_schrock'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'LUI/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'LUI' => ['LUI/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'SwiftUI'
+  
+  s.dependency 'LUX/Networking'
+  s.dependency 'PlaygroundVCHelpers'
+  s.dependency 'Slippers'
+  s.dependency 'LithoOperators'
+  s.dependency 'Prelude'
 end
